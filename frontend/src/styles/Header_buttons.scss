@@ -1,0 +1,53 @@
+@use 'variables' as v;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+$btnSize: 80px;
+$itemWidth: 50px;
+$itemsLeftPad: 10px;
+$itemsRightPad: $itemsLeftPad + $btnSize/1.1;
+//$font: Helvetica, Arial, sans-serif;
+
+
+.button_box{
+    overflow: hidden;
+    position: absolute;
+    left: 88%;
+    top: 11%;
+    width: ($itemWidth+$itemsLeftPad+$itemsRightPad)*2.8;
+    height: $btnSize;
+    margin-top: $btnSize/-2;
+    background: v.$header_buttons_color;
+    border-radius: 5px;
+    transform: translate3d(-50%,0,0);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+.button_box a{
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: top;
+    width: $itemWidth;
+    text-align: center;
+    color: #3b424a;
+    font-size: 16px;
+    line-height: $btnSize;
+    //font-family: $font;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    perspective: 1000px;
+    transition: color 0.4s;
+    cursor: pointer;
+    padding-left: $itemsLeftPad;
+    padding-right: $itemsRightPad;
+}
+
+.button_box a:hover {
+    transition: color 0.4s;
+    background-color: rgb(182, 241, 210);
+    color: black;
+  }
+
+
+
+  
+
+
+  

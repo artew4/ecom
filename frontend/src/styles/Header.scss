@@ -1,0 +1,85 @@
+@use 'variables' as v;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap');
+
+/* Container for the whole page */
+  /* Style the header with a grey background and some padding */
+$color:#899e96;;
+  .header {
+    /* height: 100px;*/
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+    background-color: $color;
+    padding: 20px 10px;
+    margin: 0;
+  }
+  /* LOGO */
+$logo_size: 100px;
+  .header img.logo {
+    width: $logo_size;
+    height:$logo_size;
+  }
+  /* TEXT LOGO */
+  .header h1.logo-txt {
+    // font-family: Arial, sans-serif;
+    float: right;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-left: 15px;
+    // text-align: center;
+    // padding: 10px;
+    text-decoration: none;
+    font-size: 80px;
+    // line-height: 80%;
+    border-radius: 4px;
+  }
+  /* Style the header links */
+  .header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 30px;
+    border-radius: 4px;
+    box-shadow: 0 0 1px 0 ;
+    margin-right: 5px;
+    background-color: #ddd;
+  }
+   /* Change the background color on mouse-over */
+   .header a:hover {
+    background-color: rgb(182, 241, 210);
+    color: black;
+  }
+  /* TEXT - MIDDLE */
+  .header p {
+    margin-top: 2%;
+    margin-left: 10%;
+    border: solid;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 4px;
+    line-height: 20px;
+  }
+  
+
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow:0 5px 7px 0 ;
+    background-color: v.$header_logo_backgroud_color;
+  }
+.header a.logo:hover{
+  background-color: #b3efd7;
+}
+ 
+  

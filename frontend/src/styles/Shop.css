@@ -1,0 +1,7 @@
+.cats {
+    display: grid;
+    float:initial;
+    height: 420px;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px 200px ;
+  } 
